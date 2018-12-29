@@ -1,0 +1,45 @@
+# the-GPA-calculator-
+its the calculator i used to use
+
+
+
+//prog that calculates GPA
+#include <stdio.h>
+
+int main()
+{                                //diclaration
+    float com_sklz, mths_tcs, prg_mng, cmp_ltr,GPA;
+    int comskls, mthmtcs, progmng, complitc;
+    const float cmntn=3;
+    const float mths=4;
+    const float prog=5;
+    const float complit=3;
+printf("\n.......................................................................\n\n");
+                                   //course One
+   printf("\nEnter marks for Communication Skills:\t");
+    scanf("%d", &comskls);
+    printf("What is the grade point for the marks entered?\t");
+    scanf("%f", &com_sklz);
+                                //course two
+   printf("\nEnter the marks for Mathematics:\t");
+    scanf("%d", &mthmtcs);
+    printf("What is the grade point for the marks entered?\t");
+    scanf("\t%f", &mths_tcs);
+                                //course three
+   printf("\nEnter the marks for Programming:\t");
+    scanf("%d", &progmng);
+    printf("What is the grade point for the marks entered?\t");
+    scanf("%f", &prg_mng);
+                                //course four
+   printf("\nEnter the marks for Computer Litracy:\t");
+    scanf("%d", &complitc);
+    printf("What is the grade point for the marks entered?\t");
+    scanf("%f", &cmp_ltr);
+                                //GPA
+  GPA = (((com_sklz*cmntn)+(mths_tcs*mths)+(prg_mng*prog)+(cmp_ltr*complit))/15);
+                    printf("\n\t\t%f is your GPA\n\n\n", GPA);
+
+    return 0;
+}
+
+
